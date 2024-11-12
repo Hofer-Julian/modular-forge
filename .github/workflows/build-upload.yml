@@ -34,7 +34,7 @@ jobs:
     - name: Install Rust toolchain
       uses: dtolnay/rust-toolchain@master
       with:
-        toolchain: "1.75.0"
+        toolchain: "1.80.0"
 
     - name: Install dev branch of rattler-build
       run: pixi run install-rattler-build
