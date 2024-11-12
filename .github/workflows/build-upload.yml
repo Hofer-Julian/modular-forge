@@ -28,6 +28,7 @@ jobs:
 
     - uses: Swatinem/rust-cache@v2
       with:
+        workspaces: ". -> rattler-build/target"
         key: ${{ hashFiles('pixi.lock') }}
 
     - name: Install dev branch of rattler-build
