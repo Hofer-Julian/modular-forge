@@ -6,9 +6,10 @@ platforms = ["linux-64", "linux-aarch64", "win-64", "osx-64", "osx-arm64"]
 
 [feature.build.tasks]
 build = "rattler-build build -c conda-forge -c https://prefix.dev/typst-forge --recipe "
+install-rattler-build = "cargo install --git https://github.com/Hofer-Julian/rattler-build.git --branch feat/oidc-support"
 
 [feature.build.dependencies]
-rattler-build = ">=0.24.0"
+rust = ">=1.81.0,<1.82"
 
 [feature.lint.dependencies]
 actionlint = "*"
