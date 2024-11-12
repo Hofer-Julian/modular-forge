@@ -9,7 +9,7 @@ build = "rattler-build build -c conda-forge -c https://prefix.dev/typst-forge --
 install-rattler-build = "cargo install --git https://github.com/Hofer-Julian/rattler-build.git --branch feat/oidc-support"
 
 [feature.build.dependencies]
-rust = ">=1.81.0,<1.82"
+rust = "~=1.80.0"
 
 [feature.lint.dependencies]
 actionlint = "*"
