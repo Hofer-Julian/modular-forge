@@ -25,6 +25,10 @@ jobs:
         pixi-version: v0.31.0
         environments: build
         activate-environment: true
+
+    - uses: Swatinem/rust-cache@v2
+      with:
+        key: ${{ hashFiles('pixi.lock') }}
     
     - name: Install dev branch of rattler-build
       run: pixi run install-rattler-build
